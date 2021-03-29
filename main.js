@@ -10,6 +10,18 @@ let frame = 0
 let score = 0
 let gamespeed = 2
 
+
+// implementing   
+var melodia = document.createElement("audio");
+melodia.src = "./sounds/flappy-dragon.mp3";
+   
+function playSonido(s) {
+    s.currentTime = 0;
+    s.play();
+}
+playSonido(melodia);
+
+
 const gradient = ctx.createLinearGradient(0, 0, 0, 70)
 gradient.addColorStop('0.4', '#fff')
 gradient.addColorStop('0.5', '#000')
